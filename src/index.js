@@ -11,14 +11,15 @@ ${reset}
  /* other styles */
  body {
 line-height: 1;
-font-family: -apple-system, BlinkMacSystemFont, «Segoe UI», «Roboto», «Oxygen»,
-«Ubuntu», «Cantarell», «Fira Sans», «Droid Sans», «Helvetica Neue»,
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+Ubuntu, Cantarell, 'Fira Sans', '«Droid Sans', 'Helvetica Neue',
 sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
 html, body {
-cursor: none;
+cursor: auto;
+background:#e1dfdd
 
 }
 * {

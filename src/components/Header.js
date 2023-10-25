@@ -1,8 +1,43 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledHeader = styled.header`
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  padding: 0 4vw;
+
+  .header__outer {
+    max-width: 1417px;
+    margin: 0 auto;
+    .header__inner {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg {
+        width: 30px;
+        fill: white;
+      }
+    }
+  }
+
+  .header__hamburger {
+    cursor: pointer;
+    display: block;
+    span {
+      height: 3px;
+      width: 30px;
+      margin: 6px;
+      display: block;
+      background: white;
+    }
+  }
+`;
 
 const Header = () => {
   return (
-    <>
+    <StyledHeader>
       <div className="header__outer">
         <div className="header__inner">
           <svg viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +67,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </StyledHeader>
   );
 };
 
